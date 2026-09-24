@@ -46,6 +46,38 @@ body.home-page .hero-art img{
 body.home-page .hero-art::after{
   background:radial-gradient(ellipse at center,transparent 22%,rgba(247,244,235,.20) 45%,rgba(247,244,235,.72) 72%,rgba(247,244,235,1) 92%) !important;
 }
+.mobile-menu{display:none;}
+
+@media (max-width:768px){
+  body.home-page header{position:relative;}
+  body.home-page .mobile-menu{
+    display:block;
+    background:#dfe8d6;
+    color:#214f40;
+    border:0;
+    border-radius:999px;
+    padding:10px 16px;
+    font-size:16px;
+    cursor:pointer;
+  }
+  body.home-page header nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    z-index:1000;
+    background:#faf8f2;
+    padding:12px 20px 20px;
+    flex-direction:column;
+    align-items:stretch;
+  }
+  body.home-page header nav.open{display:flex;}
+  body.home-page header nav a{
+    display:block;
+    padding:12px 8px;
+  }
+}  
 </style>
 
 <link rel="canonical" href="https://letmehelpcounselling.co.uk/">
@@ -58,6 +90,7 @@ body.home-page .hero-art::after{
     <div class="identity"><strong>Janine Conway</strong><span>Person-Centred Counsellor</span></div>
   </div>
   <nav><a href="#home">Home</a><a href="about.html">About Me</a><a href="approach.html">My Approach</a><a href="sessions.html">Sessions & Fees</a><a href="walk-and-talk.html">Walk &amp; Talk</a><a href="faq.html">FAQs</a><a class="pill" href="contact.html">Get in touch</a></nav>
+<button class="mobile-menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰ Menu</button>
 </header>
 <main id="home">
 <section class="hero">
