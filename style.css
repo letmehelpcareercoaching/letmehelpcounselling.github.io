@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap');
+:root{--forest:#244b3b;--sage:#dce7d7;--cream:#fbf8f1;--paper:#fffdfa;--terra:#b86243;--line:#d9dfd6;--ink:#29372f}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65}header{display:flex;align-items:center;justify-content:space-between;padding:15px 5vw;border-bottom:1px solid var(--line);background:var(--paper)}.brand{display:flex;align-items:center;gap:22px}.brand img{width:190px;height:110px;object-fit:contain}.identity{border-left:1px solid #9aaa9d;padding-left:22px}.identity strong{display:block;font:400 34px 'DM Serif Display';color:var(--forest)}.identity span{color:var(--terra);font-weight:600}nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;color:var(--ink);font-size:14px}.pill,.button{background:var(--forest);color:#fff!important;padding:11px 20px;border-radius:999px;text-decoration:none}.hero{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;padding:70px 7vw 85px;min-height:650px}.copy{max-width:600px}.kicker{text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:600;color:var(--terra)}h1,h2{font-family:'DM Serif Display';font-weight:400;color:var(--forest);line-height:1.08}h1{font-size:68px;margin:12px 0 25px}h1 em{color:#7f9668;font-style:italic}.copy>p:not(.kicker):not(.tag){font-size:18px}.button{display:inline-block;margin-top:15px}.tag{font:italic 20px 'DM Serif Display';color:var(--forest);margin-top:24px}.oval{height:520px;border-radius:50%;overflow:hidden;box-shadow:0 20px 55px rgba(36,75,59,.14)}.oval img{width:100%;height:100%;object-fit:cover}.help{text-align:center;padding:85px 6vw;background:var(--paper)}.help h2{font-size:44px;margin:6px 0 45px}.topics{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.topics div{padding:28px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:500}.links{padding:70px 6vw;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.links a{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:25px;min-height:230px}.links b{font:400 27px 'DM Serif Display';color:var(--forest);margin-bottom:12px}.links span{font-size:14px}.links i{font-style:normal;color:var(--forest);font-weight:600;margin-top:auto}.online{text-align:center;background:var(--sage);padding:65px 20px}.online h2{font-size:38px;margin:0 0 15px}.online p{max-width:780px;margin:auto}footer{background:var(--forest);color:white;padding:30px 6vw;display:flex;gap:25px;justify-content:center;flex-wrap:wrap}footer em{opacity:.85}
+@media(max-width:1000px){nav a:not(.pill){display:none}.hero{grid-template-columns:1fr}.oval{height:430px}.topics{grid-template-columns:repeat(2,1fr)}.links{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){header{padding:10px 18px}.brand img{width:125px;height:80px}.identity{padding-left:12px}.identity strong{font-size:22px}.identity span{font-size:11px}nav .pill{display:none}.hero{padding:50px 24px;gap:35px}h1{font-size:48px}.oval{height:320px}.topics,.links{grid-template-columns:1fr}.help,.links{padding:60px 24px}}
+
+
+/* Requested button update: light green, oval/pill-shaped */
+.button,
+.primary,
+.secondary,
+.nav-button,
+.pill,
+a.button,
+a.primary,
+a.secondary,
+a.nav-button,
+a.pill,
+button,
+input[type="submit"] {
+  background: #dce8d6 !important;
+  color: #244b3b !important;
+  border: 1px solid #cbd9c5 !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+.button:hover,
+.primary:hover,
+.secondary:hover,
+.nav-button:hover,
+.pill:hover,
+a.button:hover,
+a.primary:hover,
+a.secondary:hover,
+a.nav-button:hover,
+a.pill:hover,
+button:hover,
+input[type="submit"]:hover {
+  background: #cfdcc8 !important;
+  color: #244b3b !important;
+}
+
+/* V5: How I Can Help topic buttons */
+.topics {
+  border: 0 !important;
+  gap: 16px !important;
+}
+.topics div {
+  background: #dce8d6 !important;
+  color: #244b3b !important;
+  border: 1px solid #cbd9c5 !important;
+  border-radius: 999px !important;
+  min-height: 64px !important;
+  padding: 16px 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* V16: six homepage information cards */
+.links{grid-template-columns:repeat(3,1fr)}
+@media(max-width:1000px){.links{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.links{grid-template-columns:1fr}}
