@@ -111,7 +111,46 @@ body.home-page .hero-art::after{
   <div>Relationships</div><div>Life changes</div><div>Disability & adjustment</div><div>Visual impairment & sight loss</div><div>Caring responsibilities</div><div>Stress & burnout</div><div>Making different life choices</div><div>Offending &amp; making different choices</div><div>Young adults (18+)</div>
  </div>
 </section>
+<section class="home-contact">
+  <h2>Thinking about counselling?</h2>
+  <p>You can get in touch to ask a question or arrange
+  a free 15–20 minute initial consultation.
+  You don't need to explain everything in your first message.</p>
 
+  <form class="contact-form"
+        action="https://formspree.io/f/meaqjvbw"
+        method="POST">
+
+    <label for="home-name">Your name</label>
+    <input id="home-name" name="name" type="text" required>
+
+    <label for="home-email">Email address</label>
+    <input id="home-email" name="email" type="email" required>
+
+    <label for="home-phone">Phone number (optional)</label>
+    <input id="home-phone" name="phone" type="tel">
+
+    <label for="home-preference">Preferred contact method</label>
+    <select id="home-preference" name="contact_preference">
+      <option value="Email">Email</option>
+      <option value="Phone">Phone</option>
+    </select>
+
+    <label for="home-message">Brief message</label>
+    <textarea id="home-message" name="message" required></textarea>
+
+    <p class="small-note">
+      Please avoid including sensitive or urgent personal information.
+      This form is not monitored as an emergency service.
+      <a href="privacy.html">Privacy Notice</a>
+    </p>
+
+    <input type="hidden" name="_subject"
+           value="New Let Me Help Counselling Enquiry">
+
+    <button class="button" type="submit">Send enquiry</button>
+  </form>
+</section>
 
 
 <section class="online">
